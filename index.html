@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERNEIRAS</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="/script.js"></script>
+</head>
+<body>
+
+    <!-- Seção do Cabeçalho -->
+    <header class="main-header">
+      <nav class="container">
+        <div class="nav-content">
+          <div class="logo-wrapper">
+            <a href="#" class="logo-link">
+              <svg class="h-8 w-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>BrandName</span>
+            </a>
+          </div>
+          <div class="desktop-nav">
+            <div class="nav-links">
+              <a href="#">            Home        </a>
+              <a href="#features">    Features    </a>
+              <a href="#details">     Detalhes    </a>
+              <a href="#Produtos">    Perneiras   </a>
+              <a href="#contact">     Contact     </a>
+            </div>
+          </div>
+          <a href="#" class="header-cta-button">Get Started</a>
+          <button id="mobile-menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Abrir menu principal</span>
+              <svg id="open-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="hidden" id="mobile-menu">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#details">Detalhes</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="mobile-cta-button">Get Started</a>
+      </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="section-hero">
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-text">
+                <h1>
+                  Construa Experiências Web Incríveis, <span class="highlight">Mais Rápido</span>
+                </h1>
+                <p>
+                  Nossa plataforma fornece todas as ferramentas que você precisa para projetar, construir e lançar sites bonitos e responsivos com facilidade. Concentre-se na sua criatividade, nós cuidamos do resto.
+                </p>
+                <div class="hero-buttons">
+                  <a href="#" class="btn btn-primary">
+                    Comece de Graça
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                    Saiba Mais
+                  </a>
+                </div>
+              </div>
+              <div class="hero-image">
+                <img 
+                  src="https://picsum.photos/seed/tech/600/500" 
+                  alt="Ilustração de desenvolvimento web" 
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção de Features -->
+        <section id="features">
+          <div class="container">
+            <div class="section-header">
+              <h2>Por Que Nos Escolher?</h2>
+              <p>
+                Oferecemos um conjunto único de recursos projetados para aumentar sua produtividade e otimizar seu fluxo de trabalho.
+              </p>
+            </div>
+            <div class="features-grid">
+              <!-- Feature Card 1 -->
+              <div class="feature-card">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                </div>
+                <h3>Totalmente Responsivo</h3>
+                <p>Nossos designs se adaptam perfeitamente a qualquer tamanho de tela, de celulares a grandes desktops.</p>
+              </div>
+              <!-- Feature Card 2 -->
+              <div class="feature-card">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 0h-4m4 0l-5-5" /></svg>
+                </div>
+                <h3>Construtor Drag & Drop</h3>
+                <p>Crie e personalize layouts facilmente com nosso editor visual intuitivo. Não é necessário codificar.</p>
+              </div>
+              <!-- Feature Card 3 -->
+              <div class="feature-card">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                </div>
+                <h3>Velocidade da Luz</h3>
+                <p>Otimizado para desempenho, garantindo que seu site carregue rapidamente para uma melhor experiência do usuário.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção de Detalhes Alternados -->
+        <section id="details">
+          <div class="container">
+            <div class="section-header">
+              <h2>Simplifique Seu Fluxo de Trabalho</h2>
+              <p>
+                Descubra como nossa plataforma pode transformar suas ideias em realidade com ferramentas poderosas e intuitivas.
+              </p>
+            </div>
+            <div class="details-grid">
+              <!-- Item 1: Imagem à Esquerda -->
+              <div class="details-item">
+                <div class="details-image">
+                  <img src="https://picsum.photos/seed/workflow1/600/400" alt="Pessoa organizando tarefas em um quadro Kanban digital." />
+                </div>
+                <div class="details-text">
+                  <h3>Gerenciamento de Projetos Visuais</h3>
+                  <p>Organize suas tarefas, acompanhe o progresso e colabore com sua equipe em tempo real. Nossa interface visual torna o gerenciamento de projetos complexos simples e direto.</p>
+                  <ul>
+                    <li>Quadros Kanban personalizáveis.</li>
+                    <li>Linhas do tempo interativas do projeto.</li>
+                    <li>Integração perfeita com suas ferramentas favoritas.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Item 2: Imagem à Direita -->
+              <div class="details-item reverse">
+                <div class="details-image">
+                  <img src="https://picsum.photos/seed/workflow2/600/400" alt="Gráficos e painéis de análise de dados." />
+                </div>
+                <div class="details-text">
+                  <h3>Análises e Relatórios Poderosos</h3>
+                  <p>Tome decisões baseadas em dados com nossos painéis de análise fáceis de entender. Obtenha insights valiosos sobre o desempenho do seu projeto e identifique áreas para melhoria.</p>
+                   <ul>
+                    <li>Painéis em tempo real.</li>
+                    <li>Relatórios personalizáveis e exportáveis.</li>
+                    <li>Métricas-chave para o sucesso.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Item 3: Imagem à Esquerda -->
+              <div class="details-item">
+                <div class="details-image">
+                  <img src="https://picsum.photos/seed/workflow3/600/400" alt="Equipe colaborando em um documento online." />
+                </div>
+                <div class="details-text">
+                  <h3>Colaboração em Equipe Simplificada</h3>
+                  <p>Mantenha sua equipe alinhada com comunicação centralizada e compartilhamento de arquivos. Diga adeus aos e-mails intermináveis e olá à produtividade.</p>
+                   <ul>
+                    <li>Canais de comunicação por projeto.</li>
+                    <li>Compartilhamento seguro de arquivos e versionamento.</li>
+                    <li>Comentários e menções em tempo real.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Seção de Testimonials -->
+        <section id="Produtos">
+          <div class="container">
+            <div class="section-header">
+              <h2>Amado por Desenvolvedores no Mundo Todo</h2>
+              <p>
+                Não acredite apenas na nossa palavra. Veja o que nossos usuários têm a dizer sobre sua experiência.
+              </p>
+            </div>
+            <div class="testimonials-grid">
+              <!-- Testimonial Card 1 -->
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/seed/person1/200" alt="Sarah Johnson" />
+                <blockquote>“Isso muda o jogo. A quantidade de tempo que economizei em projetos é incrível. Altamente recomendado para qualquer desenvolvedor.”</blockquote>
+                <div class="author">
+                  <p class="name">Sarah Johnson</p>
+                  <p class="title">Desenvolvedora Frontend Sênior</p>
+                </div>
+              </div>
+              <!-- Testimonial Card 2 -->
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/seed/person2/200" alt="Michael Chen" />
+                <blockquote>“A interface do usuário é muito intuitiva e os recursos são poderosos. Consegui lançar o site do meu cliente antes do prazo.”</blockquote>
+                <div class="author">
+                  <p class="name">Michael Chen</p>
+                  <p class="title">Web Designer Freelancer</p>
+                </div>
+              </div>
+              <!-- Testimonial Card 3 -->
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/seed/person3/200" alt="Emily Rodriguez" />
+                <blockquote>“Uma ferramenta essencial no nosso kit de agência. Otimizou nosso fluxo de trabalho e melhorou a colaboração em equipe.”</blockquote>
+                <div class="author">
+                  <p class="name">Emily Rodriguez</p>
+                  <p class="title">CTO, Creative Solutions Inc.</p>
+                </div>
+              </div>
+              <!-- Testimonial Card 4 -->
+              <div class="testimonial-card">
+                <img src="https://picsum.photos/seed/person4/200" alt="David Lee" />
+                <blockquote>“A plataforma é incrivelmente estável e bem documentada. A equipe de suporte também é de primeira linha.”</blockquote>
+                <div class="author">
+                  <p class="name">David Lee</p>
+                  <p class="title">Gerente de Engenharia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção Mapa do Brasil -->
+        <section id="map-section">
+          <div class="container">
+            <div class="map-grid">
+              <div class="map-video">
+                <video autoplay loop muted playsinline aria-label="Animação do globo terrestre focando na América do Sul">
+                  <source src="mapa br.mp4" type="video/mp4">
+                  Seu navegador não suporta a tag de vídeo.
+                </video>
+              </div>
+              <div class="map-text">
+               <h2>Pronto para Mergulhar?</h2>
+              <p style="color: aliceblue;">
+                Comece a construir seu próximo projeto conosco hoje. É grátis para começar e você estará pronto em minutos.
+              </p>
+              <a href="#" class="map-button">
+                  Crie seu Primeiro Site
+              </a>              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção CTA (Call to Action)
+        <section id="contact">
+            <div class="container">
+              <h2>Pronto para Mergulhar?</h2>
+              <p>
+                Comece a construir seu próximo projeto conosco hoje. É grátis para começar e você estará pronto em minutos.
+              </p>
+              <a href="#" class="cta-button">
+                  Crie seu Primeiro Site
+              </a>
+            </div>
+        </section>
+    </main> -->
+
+    <!-- Seção do Rodapé -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a href="#" class="logo-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>BrandName</span>
+            </a>
+            <p>Projete, construa e lance sites incríveis.</p>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Soluções</h3>
+            <div>
+              <a href="#">Marketing</a>
+              <a href="#">Analytics</a>
+              <a href="#">Commerce</a>
+              <a href="#">Insights</a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Suporte</h3>
+            <div>
+              <a href="#">Preços</a>
+              <a href="#">Documentação</a>
+              <a href="#">Guias</a>
+              <a href="#">Status da API</a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Empresa</h3>
+            <div>
+              <a href="#">Sobre</a>
+              <a href="#">Blog</a>
+              <a href="#">Vagas</a>
+              <a href="#">Imprensa</a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Legal</h3>
+            <div>
+              <a href="#">Reivindicação</a>
+              <a href="#">Privacidade</a>
+              <a href="#">Termos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> BrandName, Inc. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">
+                    <span class="sr-only">Facebook</span>
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#">
+                    <span class="sr-only">Twitter</span>
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+                <a href="#">
+                    <span class="sr-only">GitHub</span>
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
