@@ -418,7 +418,7 @@
         
         /* Seção Mapa do Brasil */
         #map-section {
-            background-color: var(--color-primary);
+            background-color:rgb(85, 163, 66);
         }
         .map-grid {
             display: grid;
