@@ -121,7 +121,7 @@
 
         .header-cta-button {
             display: none;
-            background-color: var(--color-primary);
+            background-color:rgb(55, 117, 69);
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 0.375rem;
@@ -238,7 +238,7 @@
             transform: scale(1.05);
         }
         .hero-buttons .btn-primary {
-            background-color: var(--color-primary);
+            background-color: rgb(55, 117, 69);
             color: white;
             box-shadow: var(--shadow-lg);
         }
@@ -394,9 +394,9 @@
             text-align: center;
         }
         .testimonial-card img {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 9999px;
+            width: auto;
+            height: auto;
+           
             margin-bottom: 1rem;
             object-fit: cover;
         }
@@ -418,7 +418,7 @@
         
         /* Seção Mapa do Brasil */
         #map-section {
-            background-color:rgb(85, 163, 66);
+            background-color:rgb(55, 117, 69);
         }
         .map-grid {
             display: grid;
@@ -468,7 +468,7 @@
             display: inline-block;
             margin-top: 2rem;
             background-color: rgb(255, 255, 255);
-            color:var(--color-primary);
+            color:rgb(55, 117, 69);
             padding: 1rem 2.5rem;
             border-radius: 0.5rem;
             font-weight: 600;

@@ -90,7 +90,7 @@
             <div class="section-header">
               <h2 style="color: rgb(55, 117, 69);">
                 INDEPENDE DO AMBIENTE<br> 
-                SEGURANÇA É PRIMORDAL</h2>
+                SEGURANÇA É PRIMORDIAL</h2>
               <p>
                  "Quem protege as pernas, protege o caminho. Perneiras: sua primeira linha de defesa no campo."
               </p>
@@ -213,51 +213,226 @@
         <section id="Produtos">
           <div class="container">
             <div class="section-header">
-              <h2>Amado por Desenvolvedores no Mundo Todo</h2>
+              <h2 style="color: black;">Amado por Desenvolvedores no Mundo Todo</h2>
               <p>
                 Não acredite apenas na nossa palavra. Veja o que nossos usuários têm a dizer sobre sua experiência.
               </p>
             </div>
+
             <div class="testimonials-grid">
               <!-- Testimonial Card 1 -->
               <div class="testimonial-card">
-                <img src="https://picsum.photos/seed/person1/200" alt="Sarah Johnson" />
-                <blockquote>“Isso muda o jogo. A quantidade de tempo que economizei em projetos é incrível. Altamente recomendado para qualquer desenvolvedor.”</blockquote>
-                <div class="author">
-                  <p class="name">Sarah Johnson</p>
-                  <p class="title">Desenvolvedora Frontend Sênior</p>
-                </div>
+                <h3 style="color: black;">PERNEIRA ALTA SEM VELCRO</h3>
+                <img src="perneira alta .png" />
+                <blockquote>
+                            <p style="color: black;">3 TALAS</p>
+                            <p style="color: black;">CA: 17.944</p>
+                            <p style="color: black;">FIXADAS POR SOLDA ELETRÔNICA</p>
+                            <p style="color: black;">TALAS EM POPROPILENO</p>
+                            <p style="color: black;">COBERTURA DO JOELHO AO METATARSO</p>
+                </blockquote>
               </div>
+
               <!-- Testimonial Card 2 -->
               <div class="testimonial-card">
-                <img src="https://picsum.photos/seed/person2/200" alt="Michael Chen" />
-                <blockquote>“A interface do usuário é muito intuitiva e os recursos são poderosos. Consegui lançar o site do meu cliente antes do prazo.”</blockquote>
-                <div class="author">
-                  <p class="name">Michael Chen</p>
-                  <p class="title">Web Designer Freelancer</p>
-                </div>
+                <h3 style="color: black;">PERNEIRA BAIXA SEM VELCRO</h3>
+                <img src="perneira baixa .png"/>
+                <blockquote>
+                            <p style="color: black;">5 TALAS</p>
+                            <p style="color: black;">CA: 50.299</p>
+                            <p style="color: black;">FIXADAS POR SOLDA ELETRÔNICA</p>
+                            <p style="color: black;">TALAS EM POPROPILENO</p>
+                            <p style="color: black;">COBERTURA COMPLETA DO METATARSO</p>
+                </blockquote>
               </div>
+
               <!-- Testimonial Card 3 -->
               <div class="testimonial-card">
-                <img src="https://picsum.photos/seed/person3/200" alt="Emily Rodriguez" />
-                <blockquote>“Uma ferramenta essencial no nosso kit de agência. Otimizou nosso fluxo de trabalho e melhorou a colaboração em equipe.”</blockquote>
-                <div class="author">
-                  <p class="name">Emily Rodriguez</p>
-                  <p class="title">CTO, Creative Solutions Inc.</p>
-                </div>
+                <h3 style="color: black;">PERNEIRA ALTA COM VELCRO</h3>
+                <img src="perneira alta velcro.png" />
+                <blockquote>
+                            <p style="color: black;">5 TALAS</p>
+                            <p style="color: black;">CA: 17.944</p>
+                            <p style="color: black;">FIXADAS POR SOLDA ELETRÔNICA</p>
+                            <p style="color: black;">TALAS EM POPROPILENO</p>
+                            <p style="color: black;">COBERTURA DO JOELHO AO METATARSO</p>
+                </blockquote>
               </div>
+
               <!-- Testimonial Card 4 -->
               <div class="testimonial-card">
-                <img src="https://picsum.photos/seed/person4/200" alt="David Lee" />
-                <blockquote>“A plataforma é incrivelmente estável e bem documentada. A equipe de suporte também é de primeira linha.”</blockquote>
-                <div class="author">
-                  <p class="name">David Lee</p>
-                  <p class="title">Gerente de Engenharia</p>
-                </div>
+                <h3 style="color: black;">PERNEIRA BAIXA COM VELCRO</h3>
+                <img src="perneira baixa velcro.png" />
+                <blockquote>
+                            <p style="color: black;">3 TALAS</p>
+                            <p style="color: black;">CA: 50.297</p>
+                            <p style="color: black;">FIXADAS POR SOLDA ELETRÔNICA</p>
+                            <p style="color: black;">TALAS EM POPROPILENO</p>
+                            <p style="color: black;">COBERTURA COMPLETA DO METATARSO</p>
+                </blockquote>
               </div>
+
             </div>
           </div>
         </section>
+
+              <style>
+        /* Remove padding and margin from body */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Evita rolagem horizontal se houver overflow */
+        }
+
+        /* Isola o estilo do slider para evitar interferência com outros elementos */
+        .slider-container {
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Ocupa a largura total disponível */
+            box-sizing: border-box;
+            overflow: hidden; /* Garante que nada ultrapasse os limites do container */
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 7)); } /* Ajuste a largura total dos slides */
+        }
+
+        .slider {
+            background: white;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            width: 100%; /* Ajusta o slider para ocupar a largura total do contêiner */
+            max-width: 960px; /* Define um limite máximo de largura para o slider */
+            margin: 0 auto; /* Centraliza o slider horizontalmente */
+        }
+
+        .slider::before,
+        .slider::after {
+            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            content: "";
+            height: 200px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+
+        .slider::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        .slider::before {
+            left: 0;
+            top: 0;
+        }
+
+        .slide-track {
+            display: flex;
+            animation: scroll 40s linear infinite;
+            width: calc(250px * 7 + 40px); /* Ajuste a largura total dos slides, incluindo o espaçamento */
+        }
+
+        .slide {
+            height: 200px; /* Ajuste a altura dos slides conforme necessário */
+            width: 250px; /* Ajuste a largura dos slides conforme necessário */
+            flex-shrink: 0; /* Evita que os slides encolham */
+            margin-right: 20px; /* Adiciona um espaço entre as imagens */
+        }
+
+        .slide img {
+            height: 60%;
+            width: 60%;
+            object-fit: cover; /* Ajusta a imagem para cobrir o slide sem distorcer */
+        }
+    </style>
+
+    <center>
+        <h3 style="color:  rgb(55, 117, 69);">A Teknoluvas produz Epis há mais de 20 anos.</h3>
+        <p style="color: black;">A Teknoluvas tem o objetivo de criar, produzir e distribuir EPIs de 
+          alta qualidade, com entrega rápida em todo o Brasil, contribuindo para a segurança individual e coletiva, garantindo a proteção dos clientes e 
+           o desempenho de seus negócios.</p>
+        
+    </center>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/3-2.png" alt="Slide 1" />
+                </div>
+                <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/10.png" alt="Slide 2" />
+                </div>
+                <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2025/03/Design-sem-nome-2025-03-17T150504.637.png" alt="Slide 3" />
+                </div>
+                          <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/24.png" alt="Slide 4" />
+                </div>
+                                        <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/6.png" alt="Slide 5" />
+                </div>
+                                         <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/7.png" alt="Slide 9" />
+                </div>
+                                           <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/8.png" alt="Slide 5" />
+                </div>
+                                           <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/9.png" alt="Slide 9" />
+                </div>
+                                            <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/11.png" alt="Slide 9" />
+                </div>
+                                          <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/12.png" alt="Slide 9" />
+                </div>
+                                         <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/13.png" alt="Slide 9" />
+                </div>
+                                        <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/14.png" alt="Slide 9" />
+                </div>
+                                     <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/15.png" alt="Slide 9" />
+                </div>
+                                     <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/16.png" alt="Slide 9" />
+                </div>
+                                    <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/17.png" alt="Slide 9" />
+                </div>
+                                  <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/18.png" alt="Slide 9" />
+                </div>
+                                 <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/19.png" alt="Slide 9" />
+                </div>
+                              <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/20.png" alt="Slide 9" />
+                </div>
+                           <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/21.png" alt="Slide 9" />
+                </div>
+                              <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/22.png" alt="Slide 9" />
+                </div>
+                            <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/23.png" alt="Slide 9" />
+                </div>
+                        <div class="slide">
+                    <img src="https://teknoluvas.com.br/wp-content/uploads/2024/07/24.png" alt="Slide 9" />
+                </div>
+                <!-- Adicione mais slides conforme necessário -->
+            </div>
+        </div>
+    </div>
+
 
         <!-- Seção Mapa do Brasil -->
         <section id="map-section">
@@ -281,20 +456,6 @@
             </div>
           </div>
         </section>
-
-        <!-- Seção CTA (Call to Action)
-        <section id="contact">
-            <div class="container">
-              <h2>Pronto para Mergulhar?</h2>
-              <p>
-                Comece a construir seu próximo projeto conosco hoje. É grátis para começar e você estará pronto em minutos.
-              </p>
-              <a href="#" class="cta-button">
-                  Crie seu Primeiro Site
-              </a>
-            </div>
-        </section>
-    </main> -->
 
     <!-- Seção do Rodapé -->
     <footer class="main-footer">
